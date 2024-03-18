@@ -5,11 +5,12 @@ const list = document.getElementById("list");
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
-    console.log(input.value);
+
     const item = document.createElement("li");
     item.classList.add("item")
 
     const liText = document.createElement("p");
+    liText.classList.add("liText")
     liText.textContent = input.value;
     item.appendChild(liText);
     
@@ -29,5 +30,9 @@ form.addEventListener("submit", (e)=>{
     item.appendChild(itemChild)
     list.appendChild(item);
 
+    let lclStrgSetItem = localStorage.setItem("list", JSON.stringify(input.value));
+    console.log(lclStrgSetItem);
+
     form.reset();
 })
+

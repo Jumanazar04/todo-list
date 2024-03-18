@@ -29,3 +29,22 @@
     display: flex;
     gap: 10px;
 }
+
+.editBtn{
+    background: transparent;
+    color: rgb(34, 174, 34);
+    border: none;
+    padding: 0;
+}
+
+.deleteBtn{
+    background-color: transparent;
+    color: red;
+    border: none;
+    padding: 0;
+}
+
+.liText{
+    padding: 0;
+    margin: 0;
+}
